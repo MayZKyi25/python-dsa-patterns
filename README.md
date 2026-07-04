@@ -1,73 +1,107 @@
-# Python & Coding Interview Practice
+# Practice Coding
 
-This repository documents my Python practice and coding interview preparation.
+This repository tracks my Python review, LeetCode practice, data structures and algorithms, and AI/ML interview preparation.
 
-The goal of this repository is to improve my problem-solving ability, write cleaner Python code, and build consistent engineering habits through deliberate practice.
+## Goals
 
-## Repository Structure
+- Review Python fundamentals
+- Practice LeetCode-style coding problems
+- Learn common DSA patterns
+- Review ML fundamentals
+- Build interview-ready coding and ML knowledge
+- Track mistakes and learning progress
 
-```text
-Practice Coding/
-├── Leetcode_study/
-│   └── LeetCode-style algorithm practice
-│
-├── Python_review/
-│   ├── scratch.py       # Scratch space for testing code before finalizing
-│   ├── solutions.py     # Practice solutions with explanations
-│   └── clean_code.py    # Refactored versions with improved readability
-│
-└── README.md
-```
-
-## What You'll Find
+## Sections
 
 ### Python Review
 
-This section focuses on Python fundamentals, including:
+Basic Python syntax, functions, loops, lists, dictionaries, strings, and clean coding habits.
 
-- Functions
-- Lists, strings, dictionaries, and sets
-- Loops and conditionals
-- Variable naming
-- Code tracing and debugging
-- Time and space complexity
+### LeetCode / DSA
 
-Solutions are written in three stages:
+LeetCode problems organized by common interview patterns, including:
 
-- `scratch.py` — first attempts and experimentation
-- `solutions.py` — completed solutions with explanations
-- `clean_code.py` — refactored versions with improved readability
-
-### LeetCode Study
-
-This folder contains algorithm practice organized by common interview patterns.
-
-Current and planned topics include:
-
-- Arrays
-- Hash maps
-- Two pointers
-- Sliding window
-- Binary search
-- Linked lists
+- Arrays & Hashing
+- Two Pointers
+- Sliding Window
+- Stack
+- Binary Search
+- Linked List
 - Trees
 - Graphs
-- Dynamic programming
+- Dynamic Programming
 
-## Problem-Solving Workflow
+Each problem includes:
 
-For each problem, I try to follow the same process:
+- Problem name
+- Thought process
+- Brute force approach
+- Optimized solution
+- Time and space complexity
 
-1. Understand the problem.
-2. Write the approach in plain English.
-3. Implement the solution from scratch.
-4. Test with examples.
-5. Refactor for readability.
-6. Review time and space complexity.
-7. Revisit the problem later without referencing previous code.
+### ML Interview
 
-## Why This Repository Exists
+Machine learning concepts, math foundations, ML coding, and ML system design.
 
-I wanted one place to document my progress instead of solving problems that disappear after submission.
+Topics include:
 
-This repository also serves as a personal reference for Python syntax, algorithm patterns, and coding techniques that I revisit over time.
+- Supervised vs. unsupervised learning
+- Loss functions
+- Gradient descent
+- Overfitting and underfitting
+- Evaluation metrics
+- Recommendation systems
+- Feature pipelines
+- Model serving
+
+### Notes
+
+Resources, mistakes, reflections, and interview question tracking.
+
+### Folder Structure
+
+practice-coding/
+│
+├── README.md
+├── .gitignore
+├── requirements.txt
+│
+├── python_review/
+│   ├── README.md
+│   ├── basics/
+│   └── practice/
+│
+├── dsa/
+│   ├── README.md
+│   ├── arrays_hashing/
+│   │   ├── 0001_two_sum.py
+│   │   ├── 0217_contains_duplicate.py
+│   │   └── 0242_valid_anagram.py
+│   │
+│   ├── two_pointers/
+│   │   ├── 0125_valid_palindrome.py
+│   │   └── 0167_two_sum_ii.py
+│   │
+│   ├── sliding_window/
+│   ├── stack/
+│   ├── binary_search/
+│   ├── linked_list/
+│   ├── trees/
+│   ├── graphs/
+│   └── dynamic_programming/
+│
+├── ml_interview/
+│   ├── README.md
+│   ├── fundamentals/
+│   ├── math/
+│   ├── coding/
+│   └── system_design/
+│
+├── notes/
+│   ├── resources.md
+│   ├── mistakes_log.md
+│   └── interview_questions.md
+│
+└── templates/
+    ├── problem_template.py
+    └── ml_question_template.md

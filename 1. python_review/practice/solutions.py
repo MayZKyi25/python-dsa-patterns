@@ -74,16 +74,53 @@ def count_element(numbers, target):
     return count
 
 
+
+
+# Problem 3: Same Word Count
+# Write a function called count_words that takes a string as input and returns a dictionary where each key is a word and each value is how many times that 
+# word appears in the string.
+
+# Example:
+
+# Input:  "the cat sat on the mat the cat"
+# Output: {"the": 3, "cat": 2, "sat": 1, "on": 1, "mat": 1}:
+
+# Logic:
+# split sentence into words
+# make empty dictionary
+# for each word:
+#     if word already in dictionary:
+#         add 1 to count
+#     else:
+#         put word in dictionary with count 1
+
+
+def count_words(sentence):
+    list_of_words = sentence.split()
+    word_count = {}
+
+    for each_word in list_of_words:
+        if each_word in word_count:
+            word_count[each_word] += 1
+        else:
+            word_count[each_word] = 1
+
+    return word_count
+
+
+
 def main():
     numbers = [4, 1, 5, 0, 1, -3]
-
     print(f"Maximum number in the list is: {find_max(numbers)}")
     print(f"Minimum number in the list is: {find_min(numbers)}")
 
     values = [1, 2, 2, 3, 2, 4]
     target = 2
-
     print(f"Count occurrence of element {target} is {count_element(values, target)} times.")
+
+    sentence = "the cat sat on the mat the cat"
+    print(f"Word count in given sentence is {count_words(sentence)}")
+
 
 
 if __name__ == "__main__":
